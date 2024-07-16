@@ -10,7 +10,7 @@ export class WeatherService {
 
   getWeather(cityCode: string) {
     return this.http.get(
-      `${environment.API_URL}/gridpoint/${cityCode}/31,80/forecast`
+      `${environment.API_URL}gridpoints/${cityCode}/31,80/forecast`
     );
   }
 }

@@ -1,0 +1,11 @@
+<div class="p-4">
+  <h2 class="text-2xl text-center font-bold mb-4">Weather Forecast for {{ cityName }}</h2>
+  <div id="lineChart" class="max-w-lg mx-auto">
+    <canvas
+      baseChart
+      [data]="lineChartData"
+      [options]="lineChartOptions"
+      chartType="line"
+    ></canvas>
+  </div>
+</div>
